@@ -1,0 +1,34 @@
+body{
+  margin: 0;
+  background-color: gray;
+  overflow: hidden;
+
+}
+.container{
+  height: 80vh;
+  width: 100vh;
+  border: 1px solid black;
+  margin: 5rem auto;
+  background: url('./bg-box.png');
+  background-size: cover;
+  
+
+}
+.cipo{
+  position: absolute;
+  bottom: 40%;
+  animation-name: moveRight;
+  animation-duration: 2s;
+}
+
+@keyframes moveRight{
+  from{
+    left: 400px;
+
+  }
+  to{
+    left: 1200px;
+
+  }
+
+}
