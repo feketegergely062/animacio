@@ -4,6 +4,10 @@ body{
   overflow: hidden;
 
 }
+
+h1 {
+  text-align: center;
+}
 .container{
   height: 80vh;
   width: 100vh;
@@ -11,24 +15,102 @@ body{
   margin: 5rem auto;
   background: url('./bg-box.png');
   background-size: cover;
-  
 
+}
+.cipo2 {
+  position: absolute;
+  bottom: 40%;
+  animation-name: moveCenter;
+  animation-duration: 10s;   
+
+  
 }
 .cipo{
   position: absolute;
   bottom: 40%;
-  animation-name: moveRight;
-  animation-duration: 2s;
+  animation-name: moveLeft;
+  animation-duration: 5s;   
+  
+  
 }
 
-@keyframes moveRight{
+
+@keyframes moveCenter{
   from{
-    left: 400px;
+    
+    center: 400px;
+  animation-duration: 5s;
+ 
 
   }
   to{
-    left: 1200px;
+    
+    right:-100px;
+  animation-duration: 5s;
+  
+  }
+  }
+  @keyframes moveLeft{
+  from{
+  
+    center: 400px;
+  animation-duration: 5s;
+ 
 
   }
+  to{
+  
+    right:-100px;
+  animation-duration: 5s;
+  animation-delay: 5s;
+  }
+  }
+ 
 
-}
+@keyframes anim1 {
+      from {
+        background-color: black;  
+        color: yellow;
+      }
+      to {
+        background-color: yellow; 
+        color: black;;
+      }
+    }
+    @-webkit-keyframes anim1 {
+      from {
+        background-color: black;  
+        color: yellow;
+      }
+      to {
+        background-color: yellow; 
+        color: black;
+      }
+    }
+   
+
+    @keyframes anon5 {
+      from {
+        background-color: black;  
+        color: yellow;
+      }
+      to {
+        background-color: pink; 
+        color: white;
+      }
+    }
+    @-webkit-keyframes anon5 {
+      from {
+        background-color: black;  
+        color: yellow;
+      }
+      to {
+        background-color: pink; 
+        color: white;
+      }
+    }
+   
+   h1{
+      animation: anon5 5s;
+      -webkit-animation: anon5 5s;
+    }
